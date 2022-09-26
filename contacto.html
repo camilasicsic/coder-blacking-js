@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./imagenes/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <a href="google.com" class="wp-logo">
+      <img class="wp-logo-img" src="./imagenes/whatsapplogo.png" alt="wp-logo" />
+    </a>
+
+    <header>
+      <div class="details-header">
+        Envío gratis a todo CABA | 3 Cuotas sin interés
+      </div>
+      <div class="menu-container">
+        <div class="title">
+          <h1>BLACKING</h1>
+        </div>
+
+        <nav class="nav-bar">
+          <ul class="nav-bar-options">
+            <li class="nav-bar-option">
+              <a href="/index.html" class="nav-bar-link">Home</a>
+            </li>
+            <li class="nav-bar-option">
+              <a href="/productos.html" class="nav-bar-link">Productos</a>
+            </li>
+            <li class="nav-bar-option">
+              <a href="/politicas.html" class="nav-bar-link">Políticas</a>
+            </li>
+            <li class="nav-bar-option">
+              <a href="/preguntas-frecuentes.html" class="nav-bar-link"
+                >Preguntas frecuentes</a
+              >
+            </li>
+            <li class="nav-bar-option">
+              <a href="/contacto.html" class="nav-bar-link link-selected"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- acá empieza el body -->
+
+    <main class="section-main">
+        <h2 class="section-title">CONTACTO</h2>
+    </main>
+
+    <section class="main-contacto">
+        <div>
+        <ul class="list-contacto">
+          <li>Teléfono: 011-1533333333</li>
+          <li>¿De dónde somos? Vicente López, Argentina</li>
+          <li>Email: blacking@gmail.com</li>
+          <li>Horarios de atención: Lunes a viernes de 9 a 20 hs.</li>
+        </ul>
+      </div>
+
+      <div>
+        <form action="../form-result.php" target="_blank" class="form-contacto">
+          <p>Ingresa tu nombre completo:</p>
+            <input type="text" name="nombrecompleto" />
+          </p>
+
+          <p>Ingresa tu mail:</p>
+            <input type="text" name="nombrecompleto" />
+          </p>
+
+          <p>
+            Deja tu mensaje: <br><br/>
+            <textarea name="mensaje"></textarea>
+          </p>
+
+          <input type="submit" value="Enviar la información" />
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer-container">
+      <!-- menu -->
+      <nav class="footer-nav">
+        <ul class="nav-list">
+          <li>Shop</li>
+          <li>Nosotros</li>
+          <li>Políticas de cambios</li>
+          <li>Mi cuenta</li>
+        </ul>
+      </nav>
+
+      <!-- mail -->
+      <div class="footer-newsletter">
+        <div class="email-box">
+          <label for="email-address">¡Enterate todas las novedades!</label>
+          <br />
+          <input
+            class="footer-input"
+            id="email-address"
+            type="email"
+            size="35"
+            maxlength="64"
+            required
+            placeholder="username@example.com"
+          />
+        </div>
+        <input type="submit" value="Suscribirse" />
+      </div>
+
+      <!-- redes sociales -->
+      <nav class="footer-social">
+        <ul class="social-list">
+          <li>
+            <a href="https://www.instagram.com/blacking_ok/?hl=es-la" target="_blank">
+                <img class="social-icon" src="imagenes/iconig.png" alt="instagram">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+                <img class="social-icon" src="imagenes/iconwp.png" alt="whatsapp">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe" target="_blank">
+                <img class="social-icon" src="imagenes/iconmail.png" alt="mail">
+            </a>
+        </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

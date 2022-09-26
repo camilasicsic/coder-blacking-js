@@ -1,0 +1,214 @@
+h1 {
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.details-header {
+  background-color: #1b1b1b;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.title {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.nav-bar {
+  padding-bottom: 10px;
+}
+
+.nav-bar-options {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+}
+
+.nav-bar-option {
+  display: inline;
+  margin: 0px 40px;
+}
+
+@media (max-width: 800px) {
+  .nav-bar-option {
+    margin: 0px 10px;
+  }
+}
+
+.nav-bar-link {
+  text-decoration: none;
+  color: black;
+}
+
+.link-selected {
+  font-weight: 700;
+  color: #0096ff;
+}
+/* PREGUNTARLE A AGUS COMO HACER P Q NO SE AGRANDE EL NAVBAR */
+.nav-bar-link:hover {
+  color: #0096ff;
+  transform: scale(2);
+  font-weight: 700;
+  font-size: 20px;
+  transition: all 1s;
+}
+
+.menu-container {
+  background-color: #f1f1f1;
+}
+
+/* footer */
+
+.footer-container {
+  background-color: #1b1b1b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.footer-nav {
+  width: 30%;
+}
+
+.nav-list {
+  list-style: none;
+  padding-left: 20%;
+  line-height: 2.5;
+}
+
+.footer-social {
+  width: 30%;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+}
+
+.footer-input {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+/* boton de whatsapp */
+
+.wp-logo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.wp-logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+/* main index */
+
+.main-index {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.photo-container {
+  width: 100%;
+}
+
+.photo-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.photoCenter {
+  width: 100%;
+}
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photomiddle {
+  width: 50%;
+}
+
+/* productos */
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+
+.photo-product {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 40px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+/* contacto */
+
+.main-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px 70px 200px;
+}
+
+.list-contacto {
+  list-style: none;
+  line-height: 2.5;
+}
+
+/* titulos */
+
+.section-main {
+  margin: 50px 100px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 450px) {
+  .main-index {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* hover para preguntarle a agus
+transition: all 2s{
+} */
+
+/* notas
+border-radius: 50% 
+
+color ccff33
+
+EAE509 
+*/
