@@ -43,6 +43,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  flex-wrap: wrap;
 }
 
 .footer-nav {
@@ -59,6 +60,10 @@ body {
   width: 30%;
 }
 
+.footer-element {
+  width: 30%;
+}
+
 .social-list {
   list-style: none;
   display: flex;
@@ -69,6 +74,34 @@ body {
 .footer-input {
   margin: 5px 0;
   padding: 5px;
+  width: 100%;
+}
+
+@media screen and (max-width: 880px) {
+  .footer-element {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .footer-element:last-child {
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .footer-input {
+    max-width: 300px;
+  }
+
+  .nav-list {
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .social-list {
+    margin-top: 20px;
+    max-width: 300px;
+    justify-content: space-between;
+  }
 }
 
 /* boton de whatsapp */
