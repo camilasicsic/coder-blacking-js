@@ -31,9 +31,6 @@ body {
   width: 100%;
 }
 
-.logo {
-}
-
 /* footer */
 
 .footer-container {
@@ -202,15 +199,3 @@ body {
     flex-wrap: wrap;
   }
 }
-
-/* hover para preguntarle a agus
-transition: all 2s{
-} */
-
-/* notas
-border-radius: 50% 
-
-color ccff33
-
-EAE509 
-*/
