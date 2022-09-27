@@ -5,7 +5,7 @@ h1 {
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .details-header {
@@ -23,47 +23,15 @@ body {
   font-size: 25px;
 }
 
-.nav-bar {
-  padding-bottom: 10px;
-}
-
-.nav-bar-options {
-  list-style: none;
-  text-align: center;
-  padding: 0px;
-}
-
-.nav-bar-option {
-  display: inline;
-  margin: 0px 40px;
-}
-
-@media (max-width: 800px) {
-  .nav-bar-option {
-    margin: 0px 10px;
-  }
-}
-
-.nav-bar-link {
-  text-decoration: none;
-  color: black;
-}
-
-.link-selected {
-  font-weight: 700;
-  color: #0096ff;
-}
-/* PREGUNTARLE A AGUS COMO HACER P Q NO SE AGRANDE EL NAVBAR */
-.nav-bar-link:hover {
-  color: #0096ff;
-  transform: scale(2);
-  font-weight: 700;
-  font-size: 20px;
-  transition: all 1s;
-}
-
 .menu-container {
   background-color: #f1f1f1;
+}
+
+.nav-link {
+}
+
+.navbar-nav-all-width {
+  width: 100%;
 }
 
 /* footer */

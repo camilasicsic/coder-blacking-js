@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="shortcut icon"
@@ -27,37 +28,29 @@
       />
     </a>
 
+    <!-- header -->
+    
     <header>
       <div class="details-header">
         Envío gratis a todo CABA | 3 Cuotas sin interés
       </div>
-      <div class="menu-container">
-        <div class="title">
-          <h1>BLACKING</h1>
-        </div>
 
-        <nav class="nav-bar">
-          <ul class="nav-bar-options">
-            <li class="nav-bar-option">
-              <a href="/index.html" class="nav-bar-link">Home</a>
-            </li>
-            <li class="nav-bar-option">
-              <a href="/productos.html" class="nav-bar-link link-selected"
-                >Productos</a
-              >
-            </li>
-            <li class="nav-bar-option">
-              <a href="/politicas.html" class="nav-bar-link">Políticas</a>
-            </li>
-            <li class="nav-bar-option">
-              <a href="/preguntas-frecuentes.html" class="nav-bar-link"
-                >Preguntas frecuentes</a
-              >
-            </li>
-            <li class="nav-bar-option">
-              <a href="/contacto.html" class="nav-bar-link">Contacto</a>
-            </li>
-          </ul>
+      <div class="menu-container">
+        <nav class="navbar navbar-expand-sm bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">BLACKING</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav navbar-nav-all-width d-flex justify-content-end">
+                <a class="nav-link active" href="/productos.html">Productos</a>
+                <a class="nav-link" href="/politicas.html">Políticas</a>
+                <a class="nav-link" href="/preguntas-frecuentes.html">Preguntas frecuentes</a>
+                <a class="nav-link" href="/contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -155,5 +148,7 @@
         </ul>
       </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   </body>
 </html>
