@@ -115,38 +115,6 @@ body {
   height: 40px;
 }
 
-/* main index */
-
-.main-index {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.photo-container {
-  width: 100%;
-}
-
-.photo-center {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.photoCenter {
-  width: 100%;
-}
-
-.photo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.photomiddle {
-  width: 50%;
-}
-
 /* productos */
 
 .products {
