@@ -104,10 +104,6 @@ body {
     max-width: 300px;
     justify-content: space-between;
   }
-
-  /* .content-politicas {
-    font-size: 5px;
-  } */
 }
 
 /* boton de whatsapp */
@@ -170,7 +166,6 @@ body {
 
 .section-main {
   margin: 50px 100px;
-  padding-top: 10%;
 }
 
 .section-title {
@@ -180,10 +175,31 @@ body {
 /* mobile */
 
 @media only screen and (max-width: 450px) {
-  .main-index {
+  .section-main {
+    margin: 5%;
+    padding: 5%;
+  }
+
+  .main-contacto {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .form-contacto {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .main-contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0;
+    padding: 10px;
   }
 }
