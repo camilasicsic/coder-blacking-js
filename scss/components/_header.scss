@@ -1,0 +1,23 @@
+/*header*/
+
+header {
+  .details-header {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 15px 0px;
+    text-align: center;
+  }
+
+  .menu-container {
+    background-color: #f1f1f1;
+    .logo {
+      width: 70%;
+      height: 40%;
+    }
+    .navbar-nav-all-width {
+      width: 100%;
+    }
+  }
+}
