@@ -1,3 +1,87 @@
+/*header*/
+header .details-header {
+  background-color: #1b1b1b;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 15px 0px;
+  text-align: center;
+}
+header .menu-container {
+  background-color: #f1f1f1;
+}
+header .menu-container .logo {
+  width: 70%;
+  height: 40%;
+}
+header .menu-container .navbar-nav-all-width {
+  width: 100%;
+}
 
+/*footer*/
+.footer-container {
+  background-color: #1b1b1b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.footer-container .footer-element {
+  width: 30%;
+}
+.footer-container .footer-element .nav-list {
+  list-style: none;
+  padding-left: 20%;
+  line-height: 2.5;
+}
+@media screen and (max-width: 880px) {
+  .footer-container .footer-element .nav-list {
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+}
+.footer-container .footer-element .email-box .footer-input {
+  margin: 5px 0;
+  padding: 5px;
+  width: 100%;
+}
+.footer-container .footer-element .social-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+}
+@media screen and (max-width: 880px) {
+  .footer-container .footer-element {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .footer-container .footer-element:last-child {
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .footer-container .footer-input {
+    max-width: 300px;
+  }
+  .footer-container .social-list {
+    margin-top: 20px;
+    max-width: 300px;
+    justify-content: space-between;
+  }
+}
+
+/*boton de whatsapp*/
+.wp-logo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+}
+.wp-logo .wp-logo-img {
+  width: 40px;
+  height: 40px;
+}
 
 /*# sourceMappingURL=style.css.map */
