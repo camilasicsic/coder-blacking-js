@@ -1,0 +1,29 @@
+/*productos*/
+
+.section-main {
+  .products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+
+    .photo-product {
+      width: 300px;
+      height: 400px;
+      margin-bottom: 40px;
+      margin-left: 3px;
+      margin-right: 3px;
+      border-radius: 10px;
+      box-shadow: -1px -1px 14px 1px rgba(0, 0, 0, 0.59);
+      -webkit-box-shadow: -1px -1px 14px 1px rgba(0, 0, 0, 0.59);
+      -moz-box-shadow: -1px -1px 14px 1px rgba(0, 0, 0, 0.59);
+      cursor: pointer;
+      transition: transform 0.4s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

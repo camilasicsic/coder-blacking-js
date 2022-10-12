@@ -84,4 +84,38 @@ header .menu-container .navbar-nav-all-width {
   height: 40px;
 }
 
+/* titulos */
+.section-main {
+  margin: 50px 100px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+/*productos*/
+.section-main .products {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+.section-main .products .photo-product {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 40px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 10px;
+  box-shadow: -1px -1px 14px 1px rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: -1px -1px 14px 1px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: -1px -1px 14px 1px rgba(0, 0, 0, 0.59);
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+.section-main .products .photo-product:hover {
+  transform: scale(1.1);
+}
+
 /*# sourceMappingURL=style.css.map */
