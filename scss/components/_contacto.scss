@@ -1,0 +1,44 @@
+/*contacto*/
+.main-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px 70px 200px;
+
+  @media only screen and (max-width: 450px) {
+    .main-contacto {
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .main-contacto {
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+
+  .list-contacto {
+    list-style: none;
+    line-height: 2.5;
+    @media only screen and (max-width: 450px) {
+      margin: 40px;
+    }
+  }
+
+  .form-contacto {
+    @media only screen and (max-width: 450px) {
+      .form-contacto {
+        margin: 10px;
+      }
+    }
+  }
+}

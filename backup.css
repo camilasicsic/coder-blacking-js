@@ -159,6 +159,7 @@ body {
 .photo-product:hover {
   transform: scale(1.1);
 }
+/* listo */
 
 /* contacto */
 
@@ -168,11 +169,13 @@ body {
   align-items: center;
   padding: 10px 200px 70px 200px;
 }
+/* listo */
 
 .list-contacto {
   list-style: none;
   line-height: 2.5;
 }
+/* listo */
 
 /* titulos */
 
@@ -183,6 +186,7 @@ body {
 .section-title {
   text-align: center;
 }
+/* listo */
 
 /* mobile */
 
@@ -191,6 +195,7 @@ body {
     margin: 5%;
     padding: 5%;
   }
+  /* listo */
 
   .main-contacto {
     display: flex;
@@ -200,10 +205,12 @@ body {
     padding: 0;
     flex-direction: column;
   }
+  /* listo */
 
   .form-contacto {
     margin: 10px;
   }
+  /* listo */
 
   .photoindex {
     width: 100%;
@@ -222,3 +229,4 @@ body {
     padding: 10px;
   }
 }
+/* listo */
