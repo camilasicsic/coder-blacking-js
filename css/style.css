@@ -91,8 +91,6 @@ header .menu-container .navbar-nav-all-width {
   -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
   clip-path: inset(0px 0px 99.9% 99.9%);
   overflow: hidden;
-  overflow-x: hidden;
-  overflow-y: hidden;
   height: 1px;
   width: 1px;
   padding: 0;
