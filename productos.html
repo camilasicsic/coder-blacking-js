@@ -42,7 +42,7 @@
     />
     <title>Productos</title>
   </head>
-  <body>
+  <body onload="loadProducts()">
     <a href="https://www.whatsapp.com/?lang=es" class="wp-logo">
       <img
         class="wp-logo-img"
@@ -87,6 +87,11 @@
                 <a class="nav-link" href="./contacto.html">Contacto</a>
               </div>
             </div>
+            <div class="space-nav">|</div>
+            <a class="cart-icon" href="./cart.html">
+              <img class="cart-img" src="imagenes/cart.png" alt="">
+              <div class="amount-cart" id="amount-cart">0</div>
+            </a>
           </div>
         </nav>
       </div>
@@ -97,26 +102,9 @@
     <section class="section-main">
       <h2 class="section-title">PRODUCTOS</h2>
 
-      <div class="products">
-        <div>
-          <img class="photo-product" src="imagenes/5.JPG" alt="photo" />
-        </div>
-        <div>
-          <img class="photo-product" src="imagenes/6.JPG" alt="photo" />
-        </div>
-        <div>
-          <img class="photo-product" src="imagenes/7.JPG" alt="photo" />
-        </div>
-        <div>
-          <img class="photo-product" src="imagenes/8.jpg" alt="photo" />
-        </div>
-        <div>
-          <img class="photo-product" src="imagenes/9.jpg" alt="photo" />
-        </div>
-        <div>
-          <img class="photo-product" src="imagenes/10.jpg" alt="photo" />
-        </div>
-      </div>
+      <div id="all-products" class="products">
+
+      </div> 
     </section>
 
     <!-- footer -->
@@ -194,5 +182,7 @@
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/index.js">
+    </script>
   </body>
 </html>

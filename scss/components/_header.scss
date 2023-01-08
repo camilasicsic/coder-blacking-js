@@ -20,4 +20,28 @@ header {
       width: 100%;
     }
   }
+
+  .space-nav{
+    margin: 20px;
+    color: rgb(153, 153, 153);
+  }
+
+  .cart-icon{
+    display: flex;
+    margin-right: 20px;
+    text-decoration: none;
+
+    .cart-img{
+      width: 22px;
+      height: 22px;
+      object-fit: fill;
+    }
+
+    .amount-cart{
+      margin-left: 5px;
+      color: black;
+    }
+
+  }
+
 }

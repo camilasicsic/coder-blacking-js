@@ -8,22 +8,86 @@
     flex-wrap: wrap;
     margin: 50px auto;
 
-    .photo-product {
+    .product-card {
       width: 300px;
-      height: 400px;
-      margin-bottom: 40px;
-      margin-left: 3px;
-      margin-right: 3px;
+      height: 500px;
       border-radius: 10px;
-      box-shadow: -1px -1px 14px 1px rgba(0, 0, 0, 0.59);
-      -webkit-box-shadow: -1px -1px 14px 1px rgba(0, 0, 0, 0.59);
-      -moz-box-shadow: -1px -1px 14px 1px rgba(0, 0, 0, 0.59);
-      cursor: pointer;
-      transition: transform 0.4s;
+      margin-bottom: 40px;
+      margin-left: 5px;
+      margin-right: 5px;
+      box-shadow: -1px -1px 5px 1px rgba(0, 0, 0, 0.59);
+      position: relative;
 
       &:hover {
-        transform: scale(1.1);
+        box-shadow: -1px -1px 10px 1px rgba(0, 0, 0, 0.59);
+      }
+
+      .product-card-price{
+        position: absolute;
+        font-size: 20px;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(218, 218, 218), 0 0 0.2em rgb(137, 137, 137);
+      }
+
+      .product-image {
+        height: 400px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+  
+      .product-detail {
+        height: 100px;
+        background-color: #ebebeb;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+       
+        .cart-buttons{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          padding-top: 10px;
+  
+          .cart-button{
+            border: 2px black;
+            width: 30px;
+            height: 30px;
+            background-color: #c6c5c5;
+            border-radius: 5px;
+          }
+  
+          .amount {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+    
+        }
+    
+        .add-button-container {
+          height: 50px;
+          width: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+          .add-button{
+            margin-bottom: 10px;
+            border: none;
+            background-color: #c6c5c5;
+            border-radius: 5px;
+            padding: 4px 15px;
+          }
+        }
       }
     }
+
+
+    
   }
 }
