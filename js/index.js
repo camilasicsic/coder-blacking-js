@@ -24,7 +24,7 @@ const product4 = {
   name: 'Zapatillas Reflex White',
   price: 17000,
   stock: 10,
-  image: 'imagenes/4.JPG',
+  image: 'imagenes/4.jpg',
 };
 const product5 = {
   id: 5,
@@ -38,21 +38,21 @@ const product6 = {
   name: 'Remerón Hater',
   price: 10000,
   stock: 10,
-  image: 'imagenes/6.JPG',
+  image: 'imagenes/6.jpg',
 };
 const product7 = {
   id: 7,
   name: 'Jean Dark',
   price: 15000,
   stock: 10,
-  image: 'imagenes/7.JPG',
+  image: 'imagenes/7.jpg',
 };
 const product8 = {
   id: 8,
   name: 'Zapatillas Reflex Black',
   price: 17000,
   stock: 8,
-  image: 'imagenes/8.JPG',
+  image: 'imagenes/8.jpg',
 };
 
 const products = [
