@@ -3,21 +3,21 @@ const product1 = {
   name: 'Bermuda Blue',
   price: 12000,
   stock: 10,
-  image: 'imagenes/1.JPG',
+  image: 'imagenes/1.jpg',
 };
 const product2 = {
   id: 2,
   name: 'Zapatillas grises',
   price: 17000,
   stock: 4,
-  image: 'imagenes/2.JPG',
+  image: 'imagenes/2.jpg',
 };
 const product3 = {
   id: 3,
   name: 'Jean Light',
   price: 15000,
   stock: 7,
-  image: 'imagenes/3.JPG',
+  image: 'imagenes/3.jpg',
 };
 const product4 = {
   id: 4,
@@ -31,7 +31,7 @@ const product5 = {
   name: 'Bermuda Black',
   price: 12000,
   stock: 10,
-  image: 'imagenes/5.JPG',
+  image: 'imagenes/5.jpg',
 };
 const product6 = {
   id: 6,
