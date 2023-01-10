@@ -1,56 +1,56 @@
 const product1 = {
   id: 1,
-  name: 'Bermuda rota',
-  price: 15000,
+  name: 'Bermuda Blue',
+  price: 12000,
   stock: 10,
   image: 'imagenes/1.JPG',
 };
 const product2 = {
   id: 2,
   name: 'Zapatillas grises',
-  price: 10000,
+  price: 17000,
   stock: 4,
   image: 'imagenes/2.JPG',
 };
 const product3 = {
   id: 3,
-  name: 'Pantalon roto',
-  price: 12000,
+  name: 'Jean Light',
+  price: 15000,
   stock: 7,
   image: 'imagenes/3.JPG',
 };
 const product4 = {
   id: 4,
-  name: 'Zapatillas negras',
-  price: 13000,
+  name: 'Zapatillas Reflex White',
+  price: 17000,
   stock: 10,
   image: 'imagenes/4.JPG',
 };
 const product5 = {
   id: 5,
-  name: 'Pantalon roto oscuro',
-  price: 17000,
+  name: 'Bermuda Black',
+  price: 12000,
   stock: 10,
   image: 'imagenes/5.JPG',
 };
 const product6 = {
   id: 6,
-  name: 'Zapatillas blancas',
-  price: 18000,
+  name: 'Remerón Hater',
+  price: 10000,
   stock: 10,
   image: 'imagenes/6.JPG',
 };
 const product7 = {
   id: 7,
-  name: 'Bermuda rota 2',
-  price: 12000,
+  name: 'Jean Dark',
+  price: 15000,
   stock: 10,
   image: 'imagenes/7.JPG',
 };
 const product8 = {
   id: 8,
-  name: 'Zapatillas grises 2',
-  price: 13000,
+  name: 'Zapatillas Reflex Black',
+  price: 17000,
   stock: 8,
   image: 'imagenes/8.JPG',
 };
@@ -68,15 +68,59 @@ const products = [
 
 let cartProducts;
 
-const loadProducts = () => {
+const load = () => {
   cartProducts = JSON.parse(localStorage.getItem('cart')) || [];
+  loadCartAmount();
+}
+
+const loadCartAmount = () => {
   document.getElementById('amount-cart').innerHTML = cartProducts.reduce(
     (acc, curr) => acc + curr.amount,
     0
   );
+}
+
+const loadProducts = () => {
+  load();
   const stringProducts = products.map((product) => stringProduct(product));
   document.getElementById('all-products').innerHTML = stringProducts.join();
-};
+}
+
+const loadCart = () => {
+  load();
+  loadCartProducts();
+  totalPriceInCart();
+}
+
+const totalPriceInCart = () => {
+  let totalCart = 0;
+  for (const cartProduct of cartProducts) {
+    const product = products.find(product => product.id === cartProduct.prodId)
+    totalCart += (product.price * cartProduct.amount);
+  }
+  document.getElementById("total-amount").innerHTML = "Total $" + totalCart;
+}
+
+const removeItemFromCart = (productId) => {
+  cartProducts = cartProducts.filter(cartProduct => cartProduct.prodId != productId);
+  totalPriceInCart();
+  localStorage.setItem("cart", JSON.stringify(cartProducts))
+  loadCartProducts();
+  loadCartAmount();
+}
+
+const loadCartProducts = () => {
+  const stringCartProducts = cartProducts.map((cartProduct) => stringCartProduct(cartProduct));
+  document.getElementById('cart-container').innerHTML = stringCartProducts.length === 0 ? noItemsInCart() : stringCartProducts.join();
+}
+
+const noItemsInCart = () => {
+  return '<div class="empty-cart">' +
+    'No hay items en el carrito.' +
+    '</div>'
+}
+
+
 
 const stringProduct = (product) => {
   return (
@@ -108,6 +152,24 @@ const stringProduct = (product) => {
     '</div>'
   );
 };
+
+const stringCartProduct = (cartProduct) => {
+  const productFound = products.find(product => product.id === cartProduct.prodId);
+  return (
+    '<div class="cart-card">' +
+    '<div class="cart-card-img">' +
+    '<img class="img-cart" src="' + productFound.image + '" alt="" />' +
+    '</div>' +
+    '<div class="cart-card-title">' + productFound.name + ' (' + cartProduct.amount + ' u.)' + '</div>' +
+    '<div class="cart-card-price"><strong>$' + productFound.price + '</strong></div>' +
+    '<div class="cart-card-button">' +
+    '<button class="cart-button" onclick="removeItemFromCart(' + cartProduct.prodId + ')">Eliminar</button>' +
+    '</div>' +
+    '</div>'
+  );
+}
+
+
 
 const addToCartAmount = (productId) => {
   const amountHTML = document.getElementById('card-amount-' + productId);
@@ -160,3 +222,4 @@ const addToCart = (productId) => {
   );
   localStorage.setItem('cart', JSON.stringify(cartProducts));
 };
+

@@ -44,7 +44,7 @@
     />
     <title>BLACKING | Home</title>
   </head>
-  <body>
+  <body onload="loadCart()">
     <!-- boton de wpp -->
     <h1 class="visuallyhidden">blacking</h1>
 
@@ -93,10 +93,10 @@
               </div>
             </div>
             <div class="space-nav">|</div>
-            <div class="cart-icon">
-              <img class="cart-img" src="imagenes/cart.png" alt="" />
-              <div class="amount-cart">0</div>
-            </div>
+            <a class="cart-icon" href="./cart.html">
+              <img class="cart-img" src="imagenes/cart.png" alt="">
+              <div class="amount-cart" id="amount-cart">0</div>
+            </a>
           </div>
         </nav>
       </div>
@@ -106,20 +106,14 @@
 
     <section class="section-main">
       <h2 class="section-title">CARRITO</h2>
-      <div class="cart-card-container">
-          <div class="cart-card">
-            <div class="cart-card-img">
-              <img class="img-cart" src="imagenes/7.JPG" alt="" />
-            </div>
-            <div class="cart-card-title">Pantalón roto celeste</div>
-            <div class="cart-card-price">$14.000</div>
-            <div class="cart-card-button">
-              <button class="cart-button">Eliminar</button>
-            </div>
-          </div>
+      <div id="cart-container" class="cart-card-container">
+         
       </div>
-      <div class="total-amount-card">
-        <div class="total-amount">Total $30.000</div>
+      <div class="total-amount-container">
+        <div class="total-amount-card">
+
+          <div id="total-amount" class="total-amount"></div>
+        </div>
       </div>
     </section>
 
@@ -200,5 +194,6 @@
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

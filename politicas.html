@@ -30,7 +30,7 @@
     <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
     <title>Políticas</title>
 </head>
-<body onload="loadProducts()">
+<body onload="load()">
 
     <a href="https://www.whatsapp.com/?lang=es" class="wp-logo">
         <img class="wp-logo-img" src="./imagenes/whatsapplogo.png" alt="wp-logo">
@@ -60,10 +60,10 @@
                   </div>
                 </div>
                 <div class="space-nav">|</div>
-                <div class="cart-icon">
+                <a class="cart-icon" href="./cart.html">
                   <img class="cart-img" src="imagenes/cart.png" alt="">
-                  <div class="amount-cart">0</div>
-                </div>
+                  <div class="amount-cart" id="amount-cart">0</div>
+                </a>
               </div>
             </nav>
           </div>

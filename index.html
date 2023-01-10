@@ -44,7 +44,7 @@
     />
     <title>BLACKING | Home</title>
   </head>
-  <body>
+  <body onload="load()">
     <!-- boton de wpp -->
     <h1 class="visuallyhidden">blacking</h1>
 
@@ -93,10 +93,10 @@
               </div>
             </div>
             <div class="space-nav">|</div>
-            <div class="cart-icon">
+            <a class="cart-icon" href="./cart.html">
               <img class="cart-img" src="imagenes/cart.png" alt="">
-              <div class="amount-cart">0</div>
-            </div>
+              <div class="amount-cart" id="amount-cart">0</div>
+            </a>
           </div>
         </nav>
       </div>
@@ -228,5 +228,7 @@
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/index.js">
+    </script>
   </body>
 </html>

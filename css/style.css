@@ -173,6 +173,7 @@ header .cart-icon .amount-cart {
 }
 .section-main .products .product-card .product-image {
   height: 400px;
+  width: 300px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -256,9 +257,19 @@ header .cart-icon .amount-cart {
 
 .cart-card-container {
   margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cart-card-container .empty-cart {
+  font-size: 20px;
+  font-weight: 700;
 }
 .cart-card-container .cart-card {
-  width: 1300px;
+  max-width: 1300px;
+  width: 100%;
+  min-width: 800px;
   height: 170px;
   border: 2px solid;
   border-color: black;
@@ -277,16 +288,25 @@ header .cart-icon .amount-cart {
   background-color: #c6c5c5;
 }
 
-.total-amount-card {
+.total-amount-container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.total-amount-container .total-amount-card {
+  max-width: 1300px;
+  width: 100%;
+  min-width: 800px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 1300px;
-  height: 50px;
 }
-.total-amount-card .total-amount {
+.total-amount-container .total-amount-card .total-amount {
   font-size: 25px;
   margin-right: 20px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

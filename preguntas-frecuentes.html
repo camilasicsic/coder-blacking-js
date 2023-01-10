@@ -42,7 +42,7 @@
     />
     <title>Preguntas Frecuentes</title>
   </head>
-  <body>
+  <body onload="load()">
     <a href="https://www.whatsapp.com/?lang=es" class="wp-logo">
       <img
         class="wp-logo-img"
@@ -88,10 +88,10 @@
               </div>        
             </div>
             <div class="space-nav">|</div>
-            <div class="cart-icon">
+            <a class="cart-icon" href="./cart.html">
               <img class="cart-img" src="imagenes/cart.png" alt="">
-              <div class="amount-cart">0</div>
-            </div>
+              <div class="amount-cart" id="amount-cart">0</div>
+            </a>
           </div>
         </nav>
       </div>
@@ -249,6 +249,8 @@
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/index.js">
+    </script>
   </body>
 </html>
 
