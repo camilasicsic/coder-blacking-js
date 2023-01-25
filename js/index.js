@@ -7,7 +7,7 @@ let cartProducts;
 const load = () => {
   cartProducts = JSON.parse(localStorage.getItem('cart')) || [];
   loadCartAmount();
-  axios.get("../products.json").then(res => {
+  axios.get("./../products.json").then(res => {
     products = res.data;
     if(document.getElementById('all-products')){
       loadProducts();
