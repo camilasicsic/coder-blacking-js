@@ -1,76 +1,22 @@
-const product1 = {
-  id: 1,
-  name: 'Bermuda Blue',
-  price: 12000,
-  stock: 10,
-  image: 'imagenes/11.jpg',
-};
-const product2 = {
-  id: 2,
-  name: 'Zapatillas grises',
-  price: 17000,
-  stock: 4,
-  image: 'imagenes/22.jpg',
-};
-const product3 = {
-  id: 3,
-  name: 'Jean Light',
-  price: 15000,
-  stock: 7,
-  image: 'imagenes/33.jpg',
-};
-const product4 = {
-  id: 4,
-  name: 'Zapatillas Reflex White',
-  price: 17000,
-  stock: 10,
-  image: 'imagenes/44.jpg',
-};
-const product5 = {
-  id: 5,
-  name: 'Bermuda Black',
-  price: 12000,
-  stock: 10,
-  image: 'imagenes/55.jpg',
-};
-const product6 = {
-  id: 6,
-  name: 'Remerón Hater',
-  price: 10000,
-  stock: 10,
-  image: 'imagenes/66.jpg',
-};
-const product7 = {
-  id: 7,
-  name: 'Jean Dark',
-  price: 15000,
-  stock: 10,
-  image: 'imagenes/77.jpg',
-};
-const product8 = {
-  id: 8,
-  name: 'Zapatillas Reflex Black',
-  price: 17000,
-  stock: 8,
-  image: 'imagenes/88.jpg',
-};
 
-const products = [
-  product1,
-  product2,
-  product3,
-  product4,
-  product5,
-  product6,
-  product7,
-  product8,
-];
+
+let products = [];
 
 let cartProducts;
 
 const load = () => {
   cartProducts = JSON.parse(localStorage.getItem('cart')) || [];
   loadCartAmount();
+  axios.get("../products.json").then(res => {
+    products = res.data;
+    if(document.getElementById('all-products')){
+      loadProducts();
+    }
+    if(document.getElementById('cart-container')){
+      loadCartProducts();
+      totalPriceInCart();
+    }
+  }).catch(err => console.log(err));
 }
 
 const loadCartAmount = () => {
@@ -81,15 +27,8 @@ const loadCartAmount = () => {
 }
 
 const loadProducts = () => {
-  load();
   const stringProducts = products.map((product) => stringProduct(product));
   document.getElementById('all-products').innerHTML = stringProducts.join();
-}
-
-const loadCart = () => {
-  load();
-  loadCartProducts();
-  totalPriceInCart();
 }
 
 const totalPriceInCart = () => {

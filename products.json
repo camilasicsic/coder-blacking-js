@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Bermuda Blue",
+    "price": 12000,
+    "stock": 10,
+    "image": "imagenes/11.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Zapatillas grises",
+    "price": 17000,
+    "stock": 4,
+    "image": "imagenes/22.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Jean Light",
+    "price": 15000,
+    "stock": 7,
+    "image": "imagenes/33.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Zapatillas Reflex White",
+    "price": 17000,
+    "stock": 10,
+    "image": "imagenes/44.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Bermuda Black",
+    "price": 12000,
+    "stock": 10,
+    "image": "imagenes/55.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Remerón Hater",
+    "price": 10000,
+    "stock": 10,
+    "image": "imagenes/66.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Jean Dark",
+    "price": 15000,
+    "stock": 10,
+    "image": "imagenes/77.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Zapatillas Reflex Black",
+    "price": 17000,
+    "stock": 8,
+    "image": "imagenes/88.jpg"
+  }
+]
