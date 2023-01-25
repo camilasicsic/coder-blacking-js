@@ -19,6 +19,10 @@ const load = () => {
   }).catch(err => console.log(err));
 }
 
+const funcion = (err) => {
+  console.log(err)
+}
+
 const loadCartAmount = () => {
   document.getElementById('amount-cart').innerHTML = cartProducts.reduce(
     (acc, curr) => acc + curr.amount,
